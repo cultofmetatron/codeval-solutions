@@ -1,2 +1,12 @@
 /* a fizzbuzz implementation */
-console.log(process.argv);
+
+var fizz = require('./fizzbuzz.js');
+
+var foo = fizz.fizzbuzz(2, 3, 20);
+
+console.log(foo);
+
+
+
+
+

@@ -7,17 +7,16 @@ module.exports.fizzbuzz = function(first, second, n) {
   }
   
   var fizzy = function(n) {
-    if (divisbleBy(n, first) && divisibleBy(n, second)) { return 'FB'; }
-    if (divisible(n, first))  { return 'F';}
-    if (divisible(n, second)) { return 'B'}
+    if (divisibleBy(n, first) && divisibleBy(n, second)) { return 'FB'; }
+    if (divisibleBy(n, first))  { return 'F';}
+    if (divisibleBy(n, second)) { return 'B'}
     return n;
   };
 
   var i;
   var ret = '';
-  for (i = 0, i <= n, i++) {
-    ret = ret + fizzy(n) + ' ';
+  for (i = 0; i <= n; i++) {
+    ret = ret + fizzy(i) + ' ';
   }
   return ret.split(' ').join(' ');
-
 };
